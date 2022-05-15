@@ -8,12 +8,6 @@
           <span> GitHub </span>
         </button>
       </a>
-      <a href="https://twitter.com/u_sagrada" target="_blank" class="contact-area">
-        <button type="button">
-          <v-icon color="green"> mdi-twitter </v-icon>
-          <span> Twitter </span>
-        </button>
-      </a>
     </div>
   </section>
 </template>
