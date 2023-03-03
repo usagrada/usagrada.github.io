@@ -138,7 +138,8 @@ const config = {
       },
     }),
     plugins: [
-      "./plugin"
+      "./plugin",
+      "docusaurus-plugin-pagemove",
     ]
 };
 
