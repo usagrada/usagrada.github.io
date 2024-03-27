@@ -8,12 +8,13 @@ export const AboutSection = () => {
     <section>
       <h3 id="about">About</h3>
       <p className="about-detail blue-glass">
-        Graduate School of Information Science and Technology, The University of
+        Software Enginner
+        {/* Graduate School of Information Science and Technology, The University of
         Tokyo
         <br />
         Information & Communication Engineering
         <br />
-        M1 (ICE2022)
+        M1 (ICE2022) */}
         {/* <!-- Information & Communication Engineering -->
       <!-- Faculty of Engineering<br /> -->
       <!-- Department of Electronic Information Engineering <br /> -->

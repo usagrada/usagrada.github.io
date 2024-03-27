@@ -1,30 +1,31 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// import lightCodeTheme from "prism-react-renderer/themes/github";
+// import darkCodeTheme from "prism-react-renderer/themes/dracula";
+import path from "path";
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'usagrada',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://usagrada.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+export default {
+  title: "usagrada",
+  tagline: "Dinosaurs are cool",
+  url: "https://usagrada.github.io",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'usagrada', // Usually your GitHub org/user name.
-  projectName: 'usagrada.github.io', // Usually your repo name.
+  organizationName: "usagrada", // Usually your GitHub org/user name.
+  projectName: "usagrada.github.io", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja'],
+    defaultLocale: "ja",
+    locales: ["ja"],
     localeConfigs: {
       ja: {
         label: "日本語",
@@ -35,11 +36,11 @@ const config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -50,13 +51,13 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
-            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: [
-            require.resolve('./src/css/custom.css'),
-            require.resolve('@mdi/font/css/materialdesignicons.css'),
-          ]
+            "./src/css/custom.css",
+            path.resolve("node_modules", "@mdi/font/css/materialdesignicons.css")
+          ],
         },
       }),
     ],
@@ -66,47 +67,47 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'usagrada\'s page',
+        title: "usagrada's page",
         logo: {
-          alt: 'usagrada\'s logo',
-          src: 'img/favicon.ico',
+          alt: "usagrada's logo",
+          src: "img/favicon.ico",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
-            label: 'Tech Blog',
+            type: "doc",
+            docId: "index",
+            position: "left",
+            label: "Tech Blog",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/usagrada',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/usagrada",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tech Blog',
-                to: '/docs/',
+                label: "Tech Blog",
+                to: "/docs/",
               },
               // {
               //   label: 'Blog',
               //   to: '/blog',
               // },
               {
-                label: 'GitHub',
-                href: 'https://github.com/usagrada',
+                label: "GitHub",
+                href: "https://github.com/usagrada",
               },
             ],
-          // },
-          // {
+            // },
+            // {
             // title: 'Community',
             // items: [
             //   {
@@ -122,8 +123,8 @@ const config = {
             //     href: 'https://twitter.com/docusaurus',
             //   },
             // ],
-          // },
-          // {
+            // },
+            // {
             // title: 'More',
             // items: [
 
@@ -132,15 +133,10 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} usagrada`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+      // prism: {
+      //   theme: lightCodeTheme,
+      //   darkTheme: darkCodeTheme,
+      // },
     }),
-    plugins: [
-      "./plugin",
-      "docusaurus-plugin-pagemove",
-    ]
+  plugins: ["./plugin", "docusaurus-plugin-pagemove"],
 };
-
-module.exports = config;
