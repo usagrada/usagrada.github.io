@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkusagrada_github_io=self.webpackChunkusagrada_github_io||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"test","permalink":"/blog/test","unlisted":false}]}')}}]);
