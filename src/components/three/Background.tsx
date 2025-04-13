@@ -27,7 +27,7 @@ const Background = () => {
 
   return (
     <BackgroundSection>
-      <canvas ref={canvasRef}></canvas>
+      <canvas id="background-canvas" ref={canvasRef}></canvas>
     </BackgroundSection>
   );
 };

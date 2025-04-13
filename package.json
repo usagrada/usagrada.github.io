@@ -15,35 +15,35 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.1.1",
-    "@docusaurus/preset-classic": "3.1.1",
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
+    "@docusaurus/core": "3.7.0",
+    "@docusaurus/preset-classic": "3.7.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@mdi/font": "^7.4.47",
-    "@mdx-js/react": "^3.0.1",
-    "@mui/material": "^5.15.14",
-    "clsx": "^2.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@mui/material": "^7.0.2",
+    "clsx": "^2.1.1",
     "docusaurus-plugin-pagemove": "git+https://github.com/usagrada/docusaurus-plugin-pagemove.git",
-    "prism-react-renderer": "^2.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "three": "^0.162.0",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.175.0",
     "webpack-glsl-loader": "^1.0.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.1.1",
-    "@docusaurus/tsconfig": "^3.1.1",
-    "@docusaurus/types": "^3.1.1",
-    "@emotion/babel-preset-css-prop": "^11.11.0",
-    "@tsconfig/docusaurus": "^2.0.2",
-    "@types/three": "^0.162.0",
-    "@typescript-eslint/eslint-plugin": "^7.4.0",
-    "@typescript-eslint/parser": "^7.4.0",
-    "eslint": "^8.57.0",
-    "node-sass": "^9.0.0",
-    "react-scroll": "^1.9.0",
-    "sass-loader": "^14.1.1",
-    "typescript": "^5.4.3"
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/tsconfig": "^3.7.0",
+    "@docusaurus/types": "^3.7.0",
+    "@emotion/babel-preset-css-prop": "^11.12.0",
+    "@tsconfig/docusaurus": "^2.0.3",
+    "@types/three": "^0.175.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "react-scroll": "^1.9.3",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "typescript": "^5.8.3"
   },
   "browserslist": {
     "production": [
@@ -58,6 +58,6 @@
     ]
   },
   "engines": {
-    "node": ">=16.14"
+    "node": ">=18.0"
   }
 }

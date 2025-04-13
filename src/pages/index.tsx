@@ -12,6 +12,13 @@ import {
 import Head from "@docusaurus/Head";
 import styled from "@emotion/styled";
 import { Sidebar } from "../components/Sidebar";
+import init from "../components/wasm/target/wasm_test";
+
+init().catch((error) => {
+  if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+    throw error;
+  }
+});
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
